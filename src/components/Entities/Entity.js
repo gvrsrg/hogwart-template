@@ -9,7 +9,7 @@ const Entity = ({ name, img, level ,category}) => {
       <div className="info">
         <h2>{name}</h2>
         <p>Level: {level}</p>
-        <h2>Description</h2>
+        <Link to={"/wiki/" + category + "/" + name}><h2>Description</h2></Link>
       </div>
     </div>
   );
